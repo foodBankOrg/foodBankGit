@@ -1,0 +1,6 @@
+framework module Pods_foodBankTests {
+  umbrella header "Pods-foodBankTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
