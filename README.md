@@ -84,5 +84,5 @@ Tracks the flow of people getting meals from foodbanks. Has a to stay and to go 
   * --> from display meals button --> tableView display meals w/ back button
 
 ## Wireframes
-<img src="https://imgur.com/HXNdExD" width=800><br>
-<img src="https://imgur.com/7CFF9Lr" width=800><br>
+<img src="https://imgur.com/HXNdExD.jpg" width=800><br>
+<img src="https://imgur.com/7CFF9Lr.jpg" width=800><br>
