@@ -10,14 +10,14 @@ Unit 8: Group Milestone - Foodbank App
 
 ## Overview
 ### Description
-Tracks the flow of people getting meals from foodbanks. Has a to stay and to go meal option. Allows foodbanks to register and have guest logins or member logins. Allows for the easy counting of people.
+Tracks the flow of people getting meals from foodbanks. Has a "to stay" and "to go" meal option. Allows food banks to register and have guest logins or member logins for the easy counting of guests. 
 
 ### App Evaluation
-- **Category:** People tracking / Data
-- **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as a website. 
-- **Story:** Analyzes the flow of people in the foodbank. Cuts down on time required to manual input numbers into excell. 
-- **Market:** Any food bank / soup kitchen could use the app. Any. individual in the food bank could additionally download it on their phone.
-- **Habit:** This app would be used every day in the food bank.
+- **Category:** People-tracking / Data 
+- **Mobile:** This app would be primarily developed for mobile, but can be adapted to web. 
+- **Story:** Analyzes the flow of people in the food bank. Cuts down on time required to manually input tracking numbers into excell.
+- **Market:** Any food bank or soup kitchen could use the app. Any individual in the food bank could additionally download it on their phone.
+- **Habit:** This app would be used every day in the food bank. The goal is to become essential to running the organization through the efficient collection of data. 
 - **Scope:** First we want to have a bare-bones working tracking system with numbers. Then we want to work on exportation of the data/ analysis.
 
 ## Product Spec
