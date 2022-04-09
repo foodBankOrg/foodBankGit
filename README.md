@@ -96,18 +96,56 @@ Tracks the flow of people getting meals from foodbanks. Has a "to stay" and "to 
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
+   | user          | PFUser   | unique object for each foodbank |
+   | entryID       | Number   | unique id for each submit entry |
+   | numMealsToGo  | Number   | # of meals to go for an entry|
+   | numMealsToStay| Number   | # of meals to stay for an entry|
+   | entryNumMeals | Number   | total meals served per entry
+   | memberID      | String   | string unique id for member login
+   | memberNotes   | String   | string of notes for member ID
    | createdAt     | DateTime | date when post is created (default field) |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | maxMealStay   | Number   | # of meals max to stay per entry
+   | maxMealsGo    | Number   | # of meals max to go per entry
    
-### Models
-[Add table of models]
 ### Networking
+
+CRUD
+
+* Login / Registration (Instagram)
+--> (Create/ POST) Create user
+--> (Read/GET) Query logged in user object
+* Menu Controller 
+   * Guest login button
+        --> (Read/GET) Query logged in user object
+   * Member login id field and button
+        --> (Read/GET) Query memberID string
+        --> (Read/GET) Query memberID notes
+   * Member creation button
+   * BarItem logout
+        --> (Update/PUT) Query logged in user object / logout (Read?)
+   * BarItem admin
+* Guest Login Screen
+   * To stay Buttons - , 0 , +
+   * To go Buttons - , 0 , +
+   * Submit
+        --> (Create/ POST) entryID, numMealsToGo, numMealsToStay, entryNumMeals, createdAt
+   
+* Member Login Screen
+   * To stay Buttons - , 0 , +
+   * To go Buttons - , 0 , +
+   * Notes (allergies, family size, phone #, etc...)
+   * Submit
+        --> (Create/ POST) entryID, numMealsToGo, numMealsToStay, entryNumMeals, createdAt, memberID, memberNotes
+* Admin Screen
+   * set daily max meals to stay, max meals to go
+        --> (Update/ PUT) maxMealsStay, maxMealsGo
+   * display total served (#)
+        --> (Read/GET) SUM of entryNumMeals
+   * View meals button
+* Admin Table View
+   * display user, # of meals tkaen to stay, to go, and any notes
+        --> (Read/GET) entryID, numMealsToGo, numMealsToStay, entryNumMeals, createdAt, memberID, memberNotes
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
