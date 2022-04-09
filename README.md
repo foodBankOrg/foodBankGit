@@ -135,10 +135,11 @@ Has a "to stay" and "to go" meal option. Allows food banks to register and have 
         totalMeals.saveInBackground()
     }
 }
+''' 
 
 //a few examples of networking requests. Haven't tested this/ want to ask some questions in class about overall architecture before I go too deep on the networking requests.
    
-    '''
+
 }
    *** properties of An entry object***
  | entryID       | Number   | unique id for each submit entry |
