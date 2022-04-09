@@ -7,6 +7,7 @@ Unit 8: Group Milestone - Foodbank App
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+1. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -86,3 +87,30 @@ Tracks the flow of people getting meals from foodbanks. Has a "to stay" and "to 
 ## Wireframes
 <img src="https://imgur.com/HXNdExD.jpg" width=800><br>
 <img src="https://imgur.com/7CFF9Lr.jpg" width=800><br>
+
+## Schema 
+[This section will be completed in Unit 9]
+
+### Models
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | image         | File     | image that user posts |
+   | caption       | String   | image caption by author |
+   | commentsCount | Number   | number of comments that has been posted to an image |
+   | likesCount    | Number   | number of likes for the post |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+   
+### Models
+[Add table of models]
+### Networking
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
+Group 
