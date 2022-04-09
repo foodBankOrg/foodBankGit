@@ -11,14 +11,15 @@ Unit 8: Group Milestone - Foodbank App
 
 ## Overview
 ### Description
-Tracks the flow of people getting meals from foodbanks. Has a "to stay" and "to go" meal option. Allows food banks to register and have guest logins or member logins for the easy counting of guests. 
+Tracks the flow of people getting meals from food banks. 
+Has a "to stay" and "to go" meal option. Allows food banks to register and have guest logins or member logins for the easy counting of guests. Allows food banks to track total number of meals distributed within different time intervals. 
 
 ### App Evaluation
 - **Category:** People-tracking / Data 
-- **Mobile:** This app would be primarily developed for mobile, but can be adapted to web. 
-- **Story:** Analyzes the flow of people in the food bank. Cuts down on time required to manually input tracking numbers into excell.
-- **Market:** Any food bank or soup kitchen could use the app. Any individual in the food bank could additionally download it on their phone.
-- **Habit:** This app would be used every day in the food bank. The goal is to become essential to running the organization through the efficient collection of data. 
+- **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. While computer functionality will be viable, mobile versions of the platform would potentially have more features.
+- **Story:** Analyzes the flow of people into a food bank. Cuts down on time required to manually input tracking numbers into excell, providing an accurate an efficient way to see total meal distrubition. 
+- **Market:** Any food bank or soup kitchen could use the app. Any individual in the food bank could additionally download it on their phone  for use during food bank visit
+- **Habit:** This app would be used every day in the food bank by administrators and visitors. The goal is to become essential to running the organization through the efficient collection of data. 
 - **Scope:** First we want to have a bare-bones working tracking system with numbers. Then we want to work on exportation of the data/ analysis.
 
 ## Product Spec
@@ -26,13 +27,16 @@ Tracks the flow of people getting meals from foodbanks. Has a "to stay" and "to 
 
 **Required Must-have Stories**
 
-* User can log in
-* User can log out
-* User can sign up
+* User can log in to access food bank meal settings
+* User can log out 
+* User can sign up (For Food Bank Data Creation) 
 * User stays logged in across restarts
+
 * Guest login
+
 * Member login
-* Member creation
+* Member creation (For repeat visitors of the food bank)
+* Member Preference Settings
 * Admin Portal settings
 * Admin Portal View
 
