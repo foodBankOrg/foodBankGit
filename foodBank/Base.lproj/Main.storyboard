@@ -148,7 +148,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uTn-Pa-UiU" kind="presentation" id="ybs-Zx-y7R"/>
+                                    <segue destination="Cfp-xt-ghC" kind="presentation" id="fmO-aW-f7M"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1c-UW-J2o">
@@ -222,7 +222,6 @@
         <!--Guest View Controller-->
         <scene sceneID="XRw-mq-H47">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iki-e4-ZiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="YrT-Lh-mr4" customClass="GuestViewController" customModule="foodBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tkq-6k-ltS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -293,17 +292,8 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrn-fo-MOB">
-                                <rect key="frame" x="272" y="280" width="30" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
                                 <connections>
-                                    <action selector="onPlusButtonStay:" destination="YrT-Lh-mr4" eventType="touchUpInside" id="hjH-oI-5Sc"/>
+                                    <action selector="onSubmit:" destination="YrT-Lh-mr4" eventType="touchUpInside" id="tHG-Z5-sPR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3y-G2-JDl">
@@ -353,15 +343,19 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="backButton" destination="vc4-cE-TH2" id="LRa-Fx-wbl"/>
+                        <outlet property="backButton" destination="vc4-cE-TH2" id="Aul-DE-o6b"/>
                         <outlet property="mealsToGo" destination="lhs-zZ-1zb" id="1Vz-jd-Irv"/>
                         <outlet property="mealsToStay" destination="Ctp-iI-qpi" id="DRB-BR-wYc"/>
-                        <outlet property="minusButtonStay" destination="cGr-Zm-yUp" id="liV-29-wZc"/>
-                        <outlet property="plusButtonStay" destination="Hrn-fo-MOB" id="Q4N-1L-tSX"/>
+                        <outlet property="minusButtonGo" destination="C3y-G2-JDl" id="6jY-Fs-M4R"/>
+                        <outlet property="minusButtonStay" destination="cGr-Zm-yUp" id="z5I-Z5-nxn"/>
+                        <outlet property="plusButtonGo" destination="9S7-zZ-NdN" id="8zW-gm-wSd"/>
+                        <outlet property="plusButtonStay" destination="ytZ-l1-qsI" id="wTD-m6-QXk"/>
+                        <outlet property="submitButton" destination="h3a-Wb-FfC" id="weS-uj-4BN"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iki-e4-ZiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4131.884057971015" y="85.714285714285708"/>
+            <point key="canvasLocation" x="3888" y="86"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r6V-i6-b68">
@@ -398,24 +392,6 @@
             <point key="canvasLocation" x="3229" y="-640"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="xUZ-Wz-80O">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uTn-Pa-UiU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1g5-TG-o14">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="YrT-Lh-mr4" kind="relationship" relationship="rootViewController" id="Dls-35-uUW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cm4-fg-pDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3338" y="86"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="uJz-2z-qWT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fbo-VC-adF" sceneMemberID="viewController">
@@ -432,6 +408,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeP-Rk-UTN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2480" y="-640"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7OJ-PK-Yys">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cfp-xt-ghC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JK6-4o-R7H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YrT-Lh-mr4" kind="relationship" relationship="rootViewController" id="RIo-R0-Rk9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpp-07-Y1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3212" y="86"/>
         </scene>
     </scenes>
     <resources>

@@ -12,6 +12,15 @@ class GuestViewController: UIViewController {
     @IBOutlet weak var mealsToStay: UIButton!
     @IBOutlet weak var mealsToGo: UIButton!
     
+    @IBOutlet weak var minusButtonStay: UIButton!
+    @IBOutlet weak var plusButtonStay: UIButton!
+    
+    @IBOutlet weak var minusButtonGo: UIButton!
+    @IBOutlet weak var plusButtonGo: UIButton!
+    
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    
+    @IBOutlet weak var submitButton: UIButton!
     
     @IBAction func onMinusButtonStay(_ sender: Any) {
     }
@@ -28,13 +37,14 @@ class GuestViewController: UIViewController {
     @IBAction func onBack(_ sender: Any) {
     }
     
+    @IBAction func onSubmit(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
