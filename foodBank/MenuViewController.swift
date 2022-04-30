@@ -16,9 +16,12 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var memberLoginButton: UIButton!
     @IBOutlet weak var memberIDField: UITextField!
+        
+    let defaults = UserDefaults.standard
     
-    @IBOutlet weak var memberCreationButton: UIButton!
-    
+    @IBAction func onMemberLogin(_ sender: Any) {
+        defaults.set(memberIDField.text!, forKey: "memberID")
+    }
     
     override func viewDidLoad() {
         let user = PFUser.current()!
@@ -33,10 +36,6 @@ class MenuViewController: UIViewController {
         memberLoginButton.layer.borderWidth = 1
         memberLoginButton.layer.borderColor = UIColor.black.cgColor
         
-        memberCreationButton.layer.cornerRadius = 12
-        memberCreationButton.layer.borderWidth = 1
-        memberCreationButton.layer.borderColor = UIColor.black.cgColor
-
         // Do any additional setup after loading the view.
     }
     
