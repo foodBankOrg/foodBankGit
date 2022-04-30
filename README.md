@@ -20,53 +20,62 @@ Has a "to stay" and "to go" meal option. Allows food banks to register and have 
 - **Story:** Analyzes the flow of people into a food bank. Cuts down on time required to manually input tracking numbers into excell, providing an accurate an efficient way to see total meal distrubition. 
 - **Market:** Any food bank or soup kitchen could use the app. Any individual in the food bank could additionally download it on their phone  for use during food bank visit
 - **Habit:** This app would be used every day in the food bank by administrators and visitors. The goal is to become essential to running the organization through the efficient collection of data. 
-- **Scope:** First we want to have a bare-bones working tracking system with numbers. Then we want to work on exportation of the data/ analysis.
+- **Scope:** First we want to have a bare-bones working tracking system with numbers. Then we want to work on exporting and analyzing our data.
 
-## Product Spec
+## Product Specs
 ### 1. User Stories (Required and Optional)
 
-**Required Must-have Stories**
+**Required Functionality**
 
-* User can log in to access food bank meal settings
-* User can log out 
-* User can sign up (For Food Bank Data Creation) 
-* User stays logged in across restarts
+- [X] User can log in 
+- [X] User can log out 
+- [X] User stays logged in across restarts
 
-* Guest login
+* Guest login: 
+- [ ] User can access foodBank and checkout as "Guest"
 
-* Member login
-* Member creation (For repeat visitors of the food bank)
-* Member Preference Settings
-* Admin Portal settings
-* Admin Portal View
+* Member login:
+- [ ] User can sign up to create new account as a "Member" 
+- [ ] Member settings screen where users can denote meal preferences
+- [ ] Member can access food bank meal history 
+
+* Admin: 
+- [ ] Admin settings screen: Update max number of meals available per day 
+- [ ] Admin meal count displaying end-of-day meal tally; to be called the "Portal View" 
 
 **Optional Nice-to-have Stories**
 
-* exportation of data to API or EXCEL
-* analysis of data
+- [ ] exportation of data to API or EXCEL
+- [ ] analysis of data
 
 ### 2. Screen Archetypes
 
-* Login / Registration (Instagram)
+* Login (Guest, Member, Admin) 
+* Registration - Guest login, Admin Login, Member login, or Member sign up to access foodBank feed
+
 * Menu Controller 
    * Guest login button
    * Member login id field and button
    * Member creation button
    * BarItem logout
    * BarItem admin
+   
 * Guest Login Screen
    * To stay Buttons - , 0 , +
    * To go Buttons - , 0 , +
    * Submit
+   
 * Member Login Screen
    * To stay Buttons - , 0 , +
    * To go Buttons - , 0 , +
    * Notes (allergies, family size, phone #, etc...)
    * Submit
+   
 * Admin Screen
    * set daily max meals to stay, max meals to go
    * display total served (#)
    * View meals button
+   
 * Admin Table View
    * display user, # of meals tkaen to stay, to go, and any notes
 
