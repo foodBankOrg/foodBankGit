@@ -66,9 +66,19 @@ class GuestViewController: UIViewController {
     }
     
     @IBAction func onMinusButtonGo(_ sender: Any) {
+        var count = Int(goCountLabel.text!) ?? 0
+        if count != 0{
+            count = (count) - 1
+        }
+        let string = String(count)
+        goCountLabel.text = string
     }
     
     @IBAction func onPlusButtonGo(_ sender: Any) {
+        var count = Int(goCountLabel.text!) ?? 0
+        count = count + 1
+        let string = String(count)
+        goCountLabel.text = string
     }
     
     @IBAction func onBack(_ sender: Any) {

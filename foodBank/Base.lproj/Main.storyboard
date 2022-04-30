@@ -376,7 +376,7 @@
                         <outlet property="minusButtonStay" destination="cGr-Zm-yUp" id="z5I-Z5-nxn"/>
                         <outlet property="plusButtonGo" destination="9S7-zZ-NdN" id="8zW-gm-wSd"/>
                         <outlet property="plusButtonStay" destination="ytZ-l1-qsI" id="wTD-m6-QXk"/>
-                        <outlet property="stayCountLabel" destination="Vau-MW-2F2" id="ubh-cq-2l5"/>
+                        <outlet property="stayCountLabel" destination="BIQ-rs-BfM" id="kMN-Jq-cvt"/>
                         <outlet property="submitButton" destination="h3a-Wb-FfC" id="weS-uj-4BN"/>
                     </connections>
                 </viewController>
