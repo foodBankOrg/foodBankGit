@@ -9,39 +9,6 @@ import UIKit
 
 class GuestViewController: UIViewController {
     
-    
-    @IBOutlet weak var stayCountLabel: UILabel!
-    @IBOutlet weak var goCountLabel: UILabel!
-    
-    @IBOutlet weak var minusButtonStay: UIButton!
-    @IBOutlet weak var plusButtonStay: UIButton!
-    
-    @IBOutlet weak var minusButtonGo: UIButton!
-    @IBOutlet weak var plusButtonGo: UIButton!
-    
-    @IBOutlet weak var backButton: UIBarButtonItem!
-    
-    @IBOutlet weak var submitButton: UIButton!
-    
-    @IBAction func onMinusButtonStay(_ sender: Any) {
-    }
-    
-    @IBAction func onPlusButtonStay(_ sender: Any) {
-    }
-    
-    @IBAction func onMinusButtonGo(_ sender: Any) {
-    }
-    
-    @IBAction func onPlusButtonGo(_ sender: Any) {
-    }
-    
-    @IBAction func onBack(_ sender: Any) {
-        dismiss(animated: true)
-    }
-    
-    @IBAction func onSubmit(_ sender: Any) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,6 +33,49 @@ class GuestViewController: UIViewController {
         submitButton.layer.borderColor = UIColor.black.cgColor
 
         // Do any additional setup after loading the view.
+    }
+
+    @IBOutlet weak var stayCountLabel: UILabel!
+    @IBOutlet weak var goCountLabel: UILabel!
+    
+    @IBOutlet weak var minusButtonStay: UIButton!
+    @IBOutlet weak var plusButtonStay: UIButton!
+    
+    @IBOutlet weak var minusButtonGo: UIButton!
+    @IBOutlet weak var plusButtonGo: UIButton!
+    
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    
+    @IBOutlet weak var submitButton: UIButton!
+    
+    @IBAction func onMinusButtonStay(_ sender: Any) {
+        var count = Int(stayCountLabel.text!) ?? 0
+        if count != 0{
+            count = (count) - 1
+        }
+        let string = String(count)
+        stayCountLabel.text = string
+        
+    }
+    
+    @IBAction func onPlusButtonStay(_ sender: Any) {
+        var count = Int(stayCountLabel.text!) ?? 0
+        count = count + 1
+        let string = String(count)
+        stayCountLabel.text = string
+    }
+    
+    @IBAction func onMinusButtonGo(_ sender: Any) {
+    }
+    
+    @IBAction func onPlusButtonGo(_ sender: Any) {
+    }
+    
+    @IBAction func onBack(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func onSubmit(_ sender: Any) {
     }
 
     /*
