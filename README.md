@@ -22,28 +22,30 @@ Has a "to stay" and "to go" meal option. Allows food banks to register and have 
 - **Habit:** This app would be used every day in the food bank by administrators and visitors. The goal is to become essential to running the organization through the efficient collection of data. 
 - **Scope:** First we want to have a bare-bones working tracking system with numbers. Then we want to work on exportation of the data/ analysis.
 
-## Product Spec
+## Product Specs
 ### 1. User Stories (Required and Optional)
 
-**Required Must-have Stories**
+**Required Functionality**
 
-* User can log in to access food bank meal settings
-* User can log out 
-* User can sign up (For Food Bank Data Creation) 
-* User stays logged in across restarts
+- [X] User can log in 
+- [X] User can log out 
+- [X] User stays logged in across restarts
 
-* Guest login
+* Guest login: 
+- [ ] User can access foodBank and checkout as "Guest"
 
-* Member login
-* Member creation (For repeat visitors of the food bank)
-* Member Preference Settings
-* Admin Portal settings
-* Admin Portal View
+* Member login:
+- [ ] User can sign up to create new account as a "Member" 
+- [ ] Member settings screen where users can denote meal preferences
+
+* Admin: 
+- [ ] Admin settings screen  
+- [ ] Admin meal count view (Portal View) 
 
 **Optional Nice-to-have Stories**
 
-* exportation of data to API or EXCEL
-* analysis of data
+- [ ] exportation of data to API or EXCEL
+- [ ] analysis of data
 
 ### 2. Screen Archetypes
 
