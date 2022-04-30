@@ -93,7 +93,8 @@ class MemberViewController: UIViewController {
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        let meal = PFObject(className: "meal")
+        let name = defaults.string(forKey: "username")
+        let meal = PFObject(className: "\(name!)Meals")
         meal["user"] = defaults.string(forKey: "memberID")
         meal["toStayMeals"] = stayCountLabel.text!
         meal["toGoMeals"] = goCountLabel.text!

@@ -25,6 +25,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         let user = PFUser.current()!
+        defaults.set(user.username, forKey: "username")
         currentUserLabel.text = "Current Location/ Username: \(user.username!)"
         
         super.viewDidLoad()
