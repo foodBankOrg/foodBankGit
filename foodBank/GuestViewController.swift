@@ -9,8 +9,9 @@ import UIKit
 
 class GuestViewController: UIViewController {
     
-    @IBOutlet weak var mealsToStay: UIButton!
-    @IBOutlet weak var mealsToGo: UIButton!
+    
+    @IBOutlet weak var stayCountLabel: UILabel!
+    @IBOutlet weak var goCountLabel: UILabel!
     
     @IBOutlet weak var minusButtonStay: UIButton!
     @IBOutlet weak var plusButtonStay: UIButton!
@@ -35,6 +36,7 @@ class GuestViewController: UIViewController {
     }
     
     @IBAction func onBack(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     @IBAction func onSubmit(_ sender: Any) {
@@ -42,6 +44,26 @@ class GuestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        minusButtonStay.layer.cornerRadius = 12
+        minusButtonStay.layer.borderWidth = 1
+        minusButtonStay.layer.borderColor = UIColor.black.cgColor
+        
+        minusButtonGo.layer.cornerRadius = 12
+        minusButtonGo.layer.borderWidth = 1
+        minusButtonGo.layer.borderColor = UIColor.black.cgColor
+        
+        plusButtonStay.layer.cornerRadius = 12
+        plusButtonStay.layer.borderWidth = 1
+        plusButtonStay.layer.borderColor = UIColor.black.cgColor
+        
+        plusButtonGo.layer.cornerRadius = 12
+        plusButtonGo.layer.borderWidth = 1
+        plusButtonGo.layer.borderColor = UIColor.black.cgColor
+        
+        submitButton.layer.cornerRadius = 12
+        submitButton.layer.borderWidth = 1
+        submitButton.layer.borderColor = UIColor.black.cgColor
 
         // Do any additional setup after loading the view.
     }
