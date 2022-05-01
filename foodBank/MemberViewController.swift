@@ -1,17 +1,36 @@
 //
-//  GuestViewController.swift
+//  MemberViewController.swift
 //  foodBank
 //
-//  Created by William McPhail on 4/15/22.
+//  Created by William McPhail on 4/30/22.
 //
 
 import UIKit
 import Parse
 
-class GuestViewController: UIViewController {
+class MemberViewController: UIViewController {
+
+    @IBOutlet weak var currentMember: UILabel!
+    
+    @IBOutlet weak var minusButtonStay: UIButton!
+    @IBOutlet weak var plusButtonStay: UIButton!
+    
+    @IBOutlet weak var minusButtonGo: UIButton!
+    @IBOutlet weak var plusButtonGo: UIButton!
+    
+    @IBOutlet weak var submitButton: UIButton!
+    
+    @IBOutlet weak var stayCountLabel: UILabel!
+    @IBOutlet weak var goCountLabel: UILabel!
+    
+    @IBOutlet weak var notesTextField: UITextField!
+    
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        currentMember.text = "Current member: \(defaults.string(forKey: "memberID") ?? "no user")"
         
         minusButtonStay.layer.cornerRadius = 12
         minusButtonStay.layer.borderWidth = 1
@@ -35,20 +54,7 @@ class GuestViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBOutlet weak var stayCountLabel: UILabel!
-    @IBOutlet weak var goCountLabel: UILabel!
     
-    @IBOutlet weak var minusButtonStay: UIButton!
-    @IBOutlet weak var plusButtonStay: UIButton!
-    
-    @IBOutlet weak var minusButtonGo: UIButton!
-    @IBOutlet weak var plusButtonGo: UIButton!
-    
-    @IBOutlet weak var backButton: UIBarButtonItem!
-    
-    @IBOutlet weak var submitButton: UIButton!
-        
     @IBAction func onMinusButtonStay(_ sender: Any) {
         var count = Int(stayCountLabel.text!) ?? 0
         if count != 0{
@@ -86,14 +92,13 @@ class GuestViewController: UIViewController {
         dismiss(animated: true)
     }
     
-    let defaults = UserDefaults.standard
-    
     @IBAction func onSubmit(_ sender: Any) {
         let name = defaults.string(forKey: "username")
         let meal = PFObject(className: "\(name!)Meals")
-        meal["user"] = "guest"
+        meal["user"] = defaults.string(forKey: "memberID")
         meal["toStayMeals"] = stayCountLabel.text!
         meal["toGoMeals"] = goCountLabel.text!
+        meal["notes"] = notesTextField.text!
         
         meal.saveInBackground { success, error in
             if success{
@@ -104,6 +109,8 @@ class GuestViewController: UIViewController {
             }
         }
     }
+}
+    
 
     /*
     // MARK: - Navigation
@@ -114,5 +121,3 @@ class GuestViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
