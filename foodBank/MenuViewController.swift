@@ -7,8 +7,12 @@
 
 import UIKit
 import Parse
+import Lottie
 
 class MenuViewController: UIViewController {
+
+   // let animationView = AnimationView() Lottie animation
+
 
     @IBOutlet weak var currentUserLabel: UILabel!
     
@@ -29,6 +33,9 @@ class MenuViewController: UIViewController {
         currentUserLabel.text = "Current Location/ Username: \(user.username!)"
         
         super.viewDidLoad()
+        
+//        setupAnimation()
+        
         guestLoginButton.layer.cornerRadius = 12
         guestLoginButton.layer.borderWidth = 1
         guestLoginButton.layer.borderColor = UIColor.black.cgColor
@@ -36,9 +43,21 @@ class MenuViewController: UIViewController {
         memberLoginButton.layer.cornerRadius = 12
         memberLoginButton.layer.borderWidth = 1
         memberLoginButton.layer.borderColor = UIColor.black.cgColor
-        
+
         // Do any additional setup after loading the view.
     }
+    
+//        private func setupAnimation() {
+//        animationView.animation = Animation.named("bentobox")
+//        animationView.frame = view.bounds
+//        animationView.backgroundColor = .white
+//        animationView.contentMode = .scaleAspectFill
+//        animationView.loopMode = .loop
+//        animationView.play()
+//        view.addSubview(animationView)
+//
+//    }
+//
     
     @IBAction func onLogoutButton(_ sender: Any) {
         PFUser.logOut()

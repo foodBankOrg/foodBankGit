@@ -16,12 +16,13 @@
 		34AF4C4B27F7C922008D7BD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C4A27F7C922008D7BD4 /* SceneDelegate.swift */; };
 		34AF4C5027F7C922008D7BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AF4C4E27F7C922008D7BD4 /* Main.storyboard */; };
 		34AF4C5327F7C922008D7BD4 /* foodBank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C5127F7C922008D7BD4 /* foodBank.xcdatamodeld */; };
-		34AF4C5527F7C927008D7BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34AF4C5427F7C927008D7BD4 /* Assets.xcassets */; };
 		34AF4C5827F7C927008D7BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AF4C5627F7C927008D7BD4 /* LaunchScreen.storyboard */; };
 		34AF4C6327F7C927008D7BD4 /* foodBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6227F7C927008D7BD4 /* foodBankTests.swift */; };
 		34AF4C6D27F7C927008D7BD4 /* foodBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6C27F7C927008D7BD4 /* foodBankUITests.swift */; };
 		34AF4C6F27F7C927008D7BD4 /* foodBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6E27F7C927008D7BD4 /* foodBankUITestsLaunchTests.swift */; };
 		A723CD0FE86D7EAA4A137BED /* Pods_foodBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DD8C4640DA41923D732489 /* Pods_foodBankTests.framework */; };
+		F4F9A7DB281DD24800266A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F9A7DA281DD24800266A50 /* Assets.xcassets */; };
+		F4F9A7DD281DF14600266A50 /* bentobox.json in Resources */ = {isa = PBXBuildFile; fileRef = F4F9A7DC281DF14600266A50 /* bentobox.json */; };
 		F940E07A3163E10573B21E23 /* Pods_foodBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF52D431677D758F9D2A4132 /* Pods_foodBank.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +54,6 @@
 		34AF4C4A27F7C922008D7BD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		34AF4C4F27F7C922008D7BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34AF4C5227F7C922008D7BD4 /* foodBank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = foodBank.xcdatamodel; sourceTree = "<group>"; };
-		34AF4C5427F7C927008D7BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34AF4C5727F7C927008D7BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34AF4C5927F7C927008D7BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34AF4C5E27F7C927008D7BD4 /* foodBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +69,8 @@
 		A4994859D89F4A537B2230F1 /* Pods_foodBank_foodBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodBank_foodBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF52D431677D758F9D2A4132 /* Pods_foodBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2661E1D5BE78BCB1B1B9CE /* Pods-foodBank-foodBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBank-foodBankUITests.debug.xcconfig"; path = "Target Support Files/Pods-foodBank-foodBankUITests/Pods-foodBank-foodBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4F9A7DA281DD24800266A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4F9A7DC281DF14600266A50 /* bentobox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bentobox.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		34AF4C4727F7C922008D7BD4 /* foodBank */ = {
 			isa = PBXGroup;
 			children = (
+				F4F9A7DC281DF14600266A50 /* bentobox.json */,
 				34AF4C4827F7C922008D7BD4 /* AppDelegate.swift */,
 				34AF4C4A27F7C922008D7BD4 /* SceneDelegate.swift */,
 				34AF4C4E27F7C922008D7BD4 /* Main.storyboard */,
@@ -131,8 +134,8 @@
 				349EF721280A5CC90054347F /* GuestViewController.swift */,
 				348C58EA27F7D08C00A58181 /* LoginViewController.swift */,
 				348C58EC27F7D0B000A58181 /* MenuViewController.swift */,
-				34AF4C5427F7C927008D7BD4 /* Assets.xcassets */,
 				34AF4C5627F7C927008D7BD4 /* LaunchScreen.storyboard */,
+				F4F9A7DA281DD24800266A50 /* Assets.xcassets */,
 				34AF4C5927F7C927008D7BD4 /* Info.plist */,
 				34AF4C5127F7C922008D7BD4 /* foodBank.xcdatamodeld */,
 			);
@@ -289,7 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				34AF4C5827F7C927008D7BD4 /* LaunchScreen.storyboard in Resources */,
-				34AF4C5527F7C927008D7BD4 /* Assets.xcassets in Resources */,
+				F4F9A7DB281DD24800266A50 /* Assets.xcassets in Resources */,
+				F4F9A7DD281DF14600266A50 /* bentobox.json in Resources */,
 				34AF4C5027F7C922008D7BD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +611,7 @@
 				DEVELOPMENT_TEAM = 6UL5P86XUT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = foodBank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mia foodbank App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -636,6 +641,7 @@
 				DEVELOPMENT_TEAM = 6UL5P86XUT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = foodBank/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mia foodbank App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

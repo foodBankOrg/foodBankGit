@@ -9,6 +9,8 @@ target 'foodBank' do
 
   pod 'Parse'
   pod 'AlamofireImage' 
+  pod 'lottie-ios'
+
 
   target 'foodBankTests' do
     inherit! :search_paths
