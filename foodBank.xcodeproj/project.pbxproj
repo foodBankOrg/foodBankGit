@@ -21,6 +21,7 @@
 		34AF4C6327F7C927008D7BD4 /* foodBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6227F7C927008D7BD4 /* foodBankTests.swift */; };
 		34AF4C6D27F7C927008D7BD4 /* foodBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6C27F7C927008D7BD4 /* foodBankUITests.swift */; };
 		34AF4C6F27F7C927008D7BD4 /* foodBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6E27F7C927008D7BD4 /* foodBankUITestsLaunchTests.swift */; };
+		34EEE65828221BD000A2679B /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EEE65728221BD000A2679B /* AdminViewController.swift */; };
 		A723CD0FE86D7EAA4A137BED /* Pods_foodBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DD8C4640DA41923D732489 /* Pods_foodBankTests.framework */; };
 		F940E07A3163E10573B21E23 /* Pods_foodBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF52D431677D758F9D2A4132 /* Pods_foodBank.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		34AF4C6827F7C927008D7BD4 /* foodBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AF4C6C27F7C927008D7BD4 /* foodBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodBankUITests.swift; sourceTree = "<group>"; };
 		34AF4C6E27F7C927008D7BD4 /* foodBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		34EEE65728221BD000A2679B /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		465E0952B428E87277BFDE0B /* Pods-foodBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBankTests.release.xcconfig"; path = "Target Support Files/Pods-foodBankTests/Pods-foodBankTests.release.xcconfig"; sourceTree = "<group>"; };
 		51C13BDE40C2BC21CBF2F4C3 /* Pods-foodBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBank.debug.xcconfig"; path = "Target Support Files/Pods-foodBank/Pods-foodBank.debug.xcconfig"; sourceTree = "<group>"; };
 		83D80173187B6236B20AB95A /* Pods-foodBank-foodBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBank-foodBankUITests.release.xcconfig"; path = "Target Support Files/Pods-foodBank-foodBankUITests/Pods-foodBank-foodBankUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				34AF4C4827F7C922008D7BD4 /* AppDelegate.swift */,
 				34AF4C4A27F7C922008D7BD4 /* SceneDelegate.swift */,
 				34AF4C4E27F7C922008D7BD4 /* Main.storyboard */,
+				34EEE65728221BD000A2679B /* AdminViewController.swift */,
 				3492CCEF281DD28A00B33DAA /* MemberViewController.swift */,
 				349EF721280A5CC90054347F /* GuestViewController.swift */,
 				348C58EA27F7D08C00A58181 /* LoginViewController.swift */,
@@ -422,6 +425,7 @@
 				3492CCF0281DD28A00B33DAA /* MemberViewController.swift in Sources */,
 				349EF722280A5CC90054347F /* GuestViewController.swift in Sources */,
 				348C58ED27F7D0B000A58181 /* MenuViewController.swift in Sources */,
+				34EEE65828221BD000A2679B /* AdminViewController.swift in Sources */,
 				34AF4C5327F7C922008D7BD4 /* foodBank.xcdatamodeld in Sources */,
 				34AF4C4927F7C922008D7BD4 /* AppDelegate.swift in Sources */,
 				34AF4C4B27F7C922008D7BD4 /* SceneDelegate.swift in Sources */,

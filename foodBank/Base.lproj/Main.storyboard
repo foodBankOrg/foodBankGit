@@ -640,7 +640,7 @@
         <!--Settings-->
         <scene sceneID="vVd-3z-Vyk">
             <objects>
-                <viewController id="c5U-Ex-b7v" sceneMemberID="viewController">
+                <viewController id="c5U-Ex-b7v" customClass="AdminViewController" customModule="foodBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c1A-A1-5TS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -812,6 +812,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Settings" id="210-AO-bw5"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="goTextField" destination="19H-1H-E1P" id="Zr6-Dd-clY"/>
+                        <outlet property="numberServedGo" destination="lIb-AD-cZM" id="qRH-C3-eTI"/>
+                        <outlet property="numberServedStay" destination="HAj-Nm-wwe" id="U8n-2y-dVA"/>
+                        <outlet property="numberServedTotal" destination="fSK-ia-aTk" id="k2e-Xf-c2v"/>
+                        <outlet property="stayTextField" destination="kUs-0d-816" id="U1s-VP-BTR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9G-XC-YtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
