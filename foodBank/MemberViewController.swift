@@ -30,6 +30,10 @@ class MemberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        stayCountLabel.backgroundColor = UIColor.blueColor()
+//        stayCountLabel.layer.cornerRadius = 10.0
+//        stayCountLabel.clipsToBounds = true
+        
         currentMember.text = "Current member: \(defaults.string(forKey: "memberID") ?? "no user")"
         
         minusButtonStay.layer.cornerRadius = 12
