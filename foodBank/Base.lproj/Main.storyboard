@@ -528,20 +528,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-27-jrT">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="Shg-X3-Jog">
                                 <rect key="frame" x="50" y="514" width="314" height="54"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.5372911668" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onSignIn:" destination="lQu-JO-3GX" eventType="touchUpInside" id="clX-6u-DvS"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-27-jrT">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="54"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5372911668" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="fVC-5B-meE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSignIn:" destination="lQu-JO-3GX" eventType="touchUpInside" id="clX-6u-DvS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etl-Au-r0l">
+                                        <rect key="frame" x="198" y="0.0" width="116" height="54"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5372911668" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Admin Portal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="etl-Au-r0l" firstAttribute="leading" secondItem="c1S-27-jrT" secondAttribute="trailing" constant="10" id="paR-fo-B1c"/>
+                                </constraints>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your foodbank meal-tracking system! Create or sign-in to your foodbank location here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPT-cK-D48">
                                 <rect key="frame" x="20" y="784" width="374" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -573,33 +595,33 @@
                         <color key="backgroundColor" red="0.091671399769999995" green="0.64237111810000003" blue="0.51400893930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="yPT-cK-D48" secondAttribute="trailing" constant="20" id="1TX-UO-xVJ"/>
-                            <constraint firstItem="c1S-27-jrT" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="1bJ-yx-7Zv"/>
                             <constraint firstItem="jDF-eo-3C7" firstAttribute="top" relation="lessThanOrEqual" secondItem="bfV-lz-3is" secondAttribute="top" constant="387" id="3AY-Tf-ijB"/>
                             <constraint firstAttribute="trailing" secondItem="w5b-xi-nbR" secondAttribute="trailing" constant="50" id="7F4-k4-ZTq"/>
                             <constraint firstItem="jDF-eo-3C7" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="7I9-uo-JTP"/>
                             <constraint firstItem="jDF-eo-3C7" firstAttribute="leading" secondItem="Qea-Bw-cIJ" secondAttribute="leading" id="9C7-wl-OkL"/>
-                            <constraint firstItem="Qea-Bw-cIJ" firstAttribute="top" secondItem="c1S-27-jrT" secondAttribute="bottom" constant="30" id="BzN-E0-ynr"/>
+                            <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="Shg-X3-Jog" secondAttribute="trailing" constant="50" id="9yc-c9-61D"/>
+                            <constraint firstItem="Shg-X3-Jog" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="DeF-Gz-DuF"/>
                             <constraint firstItem="w5b-xi-nbR" firstAttribute="leading" secondItem="bfV-lz-3is" secondAttribute="leading" constant="50" id="ERb-jT-6UD"/>
                             <constraint firstItem="uVK-tG-bFb" firstAttribute="top" relation="lessThanOrEqual" secondItem="jDF-eo-3C7" secondAttribute="bottom" constant="27" id="Jgb-3v-Uc9"/>
                             <constraint firstItem="jDF-eo-3C7" firstAttribute="top" relation="lessThanOrEqual" secondItem="w5b-xi-nbR" secondAttribute="bottom" constant="40" id="Kcg-xy-Urf"/>
-                            <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="c1S-27-jrT" secondAttribute="trailing" constant="50" id="Psy-NF-S7t"/>
-                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="c1S-27-jrT" secondAttribute="bottom" constant="328" id="THU-PU-siV"/>
                             <constraint firstItem="w5b-xi-nbR" firstAttribute="top" secondItem="bfV-lz-3is" secondAttribute="top" constant="20" id="VD5-PG-Bxt"/>
                             <constraint firstItem="yPT-cK-D48" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="20" id="WME-Kw-JPr"/>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="bottom" secondItem="yPT-cK-D48" secondAttribute="bottom" constant="17" id="YmM-6f-hCI"/>
+                            <constraint firstItem="Shg-X3-Jog" firstAttribute="top" secondItem="uVK-tG-bFb" secondAttribute="bottom" constant="27" id="aLe-Ef-hsN"/>
                             <constraint firstItem="Qea-Bw-cIJ" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="bpP-Uk-3Fh"/>
                             <constraint firstItem="yPT-cK-D48" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="20" id="ciC-o6-Byo"/>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="uVK-tG-bFb" secondAttribute="trailing" constant="50" id="fI8-ie-Ldc"/>
                             <constraint firstItem="uVK-tG-bFb" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="feb-42-LIn"/>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="yPT-cK-D48" secondAttribute="trailing" constant="20" id="lyb-53-YlY"/>
-                            <constraint firstItem="c1S-27-jrT" firstAttribute="top" relation="lessThanOrEqual" secondItem="uVK-tG-bFb" secondAttribute="bottom" constant="27" id="qEG-BB-IRV"/>
                             <constraint firstItem="yPT-cK-D48" firstAttribute="top" relation="lessThanOrEqual" secondItem="Qea-Bw-cIJ" secondAttribute="bottom" constant="136" id="uRa-Ej-tmS"/>
+                            <constraint firstItem="Qea-Bw-cIJ" firstAttribute="top" secondItem="Shg-X3-Jog" secondAttribute="bottom" constant="30" id="upY-LS-7BZ"/>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="jDF-eo-3C7" secondAttribute="trailing" constant="50" id="w0Q-qu-AwR"/>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="Qea-Bw-cIJ" secondAttribute="trailing" constant="50" id="xtx-uc-kKm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sXd-ah-6wI"/>
                     <connections>
+                        <outlet property="adminLoginButton" destination="etl-Au-r0l" id="TgL-s6-qyw"/>
                         <outlet property="passwordTextField" destination="uVK-tG-bFb" id="fZl-5U-3fO"/>
                         <outlet property="signInButton" destination="c1S-27-jrT" id="2y4-Qx-z87"/>
                         <outlet property="signUpButton" destination="Qea-Bw-cIJ" id="xS8-g7-yFW"/>

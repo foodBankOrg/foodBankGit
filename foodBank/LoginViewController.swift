@@ -16,6 +16,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
+    @IBOutlet weak var adminLoginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         signInButton.layer.cornerRadius = 12
@@ -25,6 +27,10 @@ class LoginViewController: UIViewController {
         signUpButton.layer.cornerRadius = 12
         signUpButton.layer.borderWidth = 1
         signUpButton.layer.borderColor = UIColor.black.cgColor
+        
+        adminLoginButton.layer.cornerRadius = 12
+        adminLoginButton.layer.borderWidth = 1
+        adminLoginButton.layer.borderColor = UIColor.black.cgColor
         
         // Do any additional setup after loading the view.
     }
