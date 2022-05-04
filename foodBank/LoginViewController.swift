@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var adminLoginButton: UIButton!
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         signInButton.layer.cornerRadius = 12
@@ -41,6 +43,7 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password) { user, Error in
             if user != nil {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                self.defaults.set(username, forKey: "username")
             } else {
                 print("Error: \(String(describing: Error))")
             }
@@ -53,6 +56,7 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password) { user, Error in
             if user != nil {
                 self.performSegue(withIdentifier: "adminSegue", sender: nil)
+                self.defaults.set(username, forKey: "username")
             } else {
                 print("Error: \(String(describing: Error))")
             }
@@ -65,6 +69,7 @@ class LoginViewController: UIViewController {
         user.signUpInBackground { success, Error in
             if success{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                self.defaults.set(username, forKey: "username")
             } else {
                 print("Error: \(String(describing: Error))")
             }

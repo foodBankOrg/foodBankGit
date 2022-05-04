@@ -18,16 +18,22 @@ class AdminViewController: UIViewController {
     @IBOutlet weak var numberServedGo: UILabel!
     @IBOutlet weak var numberServedTotal: UILabel!
     
+    @IBOutlet weak var setStayButton: UIButton!
+    @IBOutlet weak var setGoButton: UIButton!
+    
     let user = PFUser.current()!
+    let username = user.username
+
+    let max = PFObject(className: "\(username!)Maxes")
+    
+    @IBAction func onSetStay(_ sender: Any) {
+    }
+    
+    @IBAction func onSetGo(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        if user["maxMealsStay"] as! Int != 0{
-            stayTextField.text = user["maxMealStay"] as! String
-        }
-        if user["maxMealsGo"] as! Int != 0{
-            goTextField.text = user["maxMealStay"] as! String
-        }
+  
         // Do any additional setup after loading the view.
     }
     
