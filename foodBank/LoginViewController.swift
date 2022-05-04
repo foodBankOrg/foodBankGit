@@ -47,6 +47,17 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func onAdminPortal(_ sender: Any) {
+        let username = usernameTextField.text!
+        let password = passwordTextField.text!
+        PFUser.logInWithUsername(inBackground: username, password: password) { user, Error in
+            if user != nil {
+                self.performSegue(withIdentifier: "adminSegue", sender: nil)
+            } else {
+                print("Error: \(String(describing: Error))")
+            }
+        }
+    }
     @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
         user.username = usernameTextField.text!
