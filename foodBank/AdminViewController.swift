@@ -13,7 +13,7 @@ class AdminViewController: UIViewController {
     @IBOutlet weak var stayTextField: UITextField!
     @IBOutlet weak var goTextField: UITextField!
     
-    
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var numberServedStay: UILabel!
     @IBOutlet weak var numberServedGo: UILabel!
     @IBOutlet weak var numberServedTotal: UILabel!
@@ -22,21 +22,78 @@ class AdminViewController: UIViewController {
     @IBOutlet weak var setGoButton: UIButton!
     
     let user = PFUser.current()!
-    let username = user.username
-
-    let max = PFObject(className: "\(username!)Maxes")
     
-    @IBAction func onSetStay(_ sender: Any) {
-    }
+    var servedStay = 0
+    var servedGo = 0
+    var servedTotal = 0
     
-    @IBAction func onSetGo(_ sender: Any) {
-    }
+    var meals = [PFObject]()
     
     override func viewDidLoad() {
-  
-        // Do any additional setup after loading the view.
+        let now = NSDate()
+        let cal = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)
+        let midnightOfToday = cal!.startOfDay(for: now as Date)
+        
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy"
+        dateLabel.text! = dateFormatter.string(from: date)
+        
+        let query = PFQuery(className: "Meal")
+        query.whereKey("user", equalTo: user)
+        query.whereKey("createdAt", greaterThanOrEqualTo: midnightOfToday)
+        query.findObjectsInBackground { object, error in
+            if object != nil {
+                self.meals = object!
+            } else {
+                print(error.debugDescription)
+            }
+        }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        var i = 0
+        while (i < meals.count){
+            let meal = meals[i]
+            let mealServedStay = meal.value(forKey: "toStayMeals")!
+            let mealServedGo = meal.value(forKey: "toGoMeals")!
+            servedGo = servedGo + Int(mealServedGo as! String)!
+            servedStay = servedStay + Int(mealServedStay as! String)!
+            i += 1
+        }
+        servedTotal = servedStay + servedGo
+        numberServedTotal.text! = String(servedTotal)
+        numberServedStay.text! = String(servedStay)
+        numberServedGo.text! = String(servedGo)
+    }
+    
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func onSetStay(_ sender: Any){
+        let maxStay = stayTextField.text!
+        user["stay"] = maxStay
+        user.saveInBackground { success, error in
+            if success {
+                print("save user maxStay object")
+            } else {
+                print(error.debugDescription)
+            }
+        }
+    }
+                
+    @IBAction func onSetGo(_ sender: Any) {
+        let maxGo = goTextField.text!
+        user["go"] = maxGo
+        user.saveInBackground { success, error in
+            if success {
+                print("save user maxGo object")
+            } else {
+                print(error.debugDescription)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

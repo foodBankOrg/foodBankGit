@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -82,9 +83,6 @@
                                 <action selector="onLogoutButton:" destination="PRQ-yG-Y00" id="hp9-mH-aci"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Settings and Administration" id="3Lb-zm-61r">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="currentUserLabel" destination="B4X-Ed-b9p" id="yCM-2l-bxt"/>
@@ -105,7 +103,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tzi-NY-dbh">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tzi-NY-dbh">
                                 <rect key="frame" x="120" y="279.5" width="174" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGr-Zm-yUp">
@@ -163,7 +161,7 @@
                                     <action selector="onSubmit:" destination="YrT-Lh-mr4" eventType="touchUpInside" id="tHG-Z5-sPR"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="t3w-i5-uaH">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="t3w-i5-uaH">
                                 <rect key="frame" x="120" y="438" width="174" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3y-G2-JDl">
@@ -289,7 +287,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="8kr-we-cFf">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8kr-we-cFf">
                                 <rect key="frame" x="120" y="279.5" width="174" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdR-ed-eHj">
@@ -335,7 +333,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5372911668" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ThJ-xq-nla">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ThJ-xq-nla">
                                 <rect key="frame" x="120" y="438" width="174" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEy-pp-UoB">
@@ -692,7 +690,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="8gX-IJ-ZEv">
-                                <rect key="frame" x="90" y="365.5" width="217.5" height="30"/>
+                                <rect key="frame" x="80" y="365.5" width="217.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Served to Stay: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC4-s6-8mS">
                                         <rect key="frame" x="0.0" y="0.0" width="161.5" height="30"/>
@@ -714,7 +712,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="xIY-HR-TNj">
-                                <rect key="frame" x="90" y="415.5" width="217.5" height="30"/>
+                                <rect key="frame" x="80" y="415.5" width="217.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Served to Go:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CG-jr-Uxd">
                                         <rect key="frame" x="0.0" y="0.0" width="145.5" height="30"/>
@@ -736,7 +734,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="142" translatesAutoresizingMaskIntoConstraints="NO" id="oV5-vl-RLT">
-                                <rect key="frame" x="90" y="465.5" width="218" height="30"/>
+                                <rect key="frame" x="80" y="465.5" width="218" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Up-V3-8aB">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
@@ -758,21 +756,24 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-qd-CXy">
-                                <rect key="frame" x="90" y="325" width="228.5" height="20.5"/>
+                                <rect key="frame" x="50" y="325" width="278.5" height="20.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meals Served:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKv-gu-Ose">
-                                        <rect key="frame" x="0.0" y="0.0" width="108" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meals Served Today:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKv-gu-Ose">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW3-hh-GOO">
-                                        <rect key="frame" x="188" y="0.0" width="40.5" height="20.5"/>
+                                        <rect key="frame" x="238" y="0.0" width="40.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="BW3-hh-GOO" firstAttribute="leading" secondItem="oKv-gu-Ose" secondAttribute="trailing" constant="20" id="wUN-ff-Dl2"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-Ud-9hX">
                                 <rect key="frame" x="80" y="570.5" width="254" height="50"/>
@@ -787,13 +788,13 @@
                         <viewLayoutGuide key="safeArea" id="BZ8-0b-Jmj"/>
                         <color key="backgroundColor" red="0.091711841520000004" green="0.64239853619999998" blue="0.51195925470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8gX-IJ-ZEv" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="90" id="3qS-sg-fEb"/>
+                            <constraint firstItem="8gX-IJ-ZEv" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="80" id="3qS-sg-fEb"/>
                             <constraint firstItem="lbD-oW-ijO" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="50" id="6BH-r4-vvv"/>
                             <constraint firstItem="BZ8-0b-Jmj" firstAttribute="trailing" secondItem="lbD-oW-ijO" secondAttribute="trailing" constant="50" id="7tn-Pz-MU6"/>
                             <constraint firstItem="lhe-qd-CXy" firstAttribute="top" secondItem="19H-1H-E1P" secondAttribute="bottom" constant="50" id="AeB-BF-MQj"/>
                             <constraint firstItem="kUs-0d-816" firstAttribute="top" secondItem="lbD-oW-ijO" secondAttribute="bottom" constant="20" id="BZ5-4P-a0M"/>
-                            <constraint firstItem="lhe-qd-CXy" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="90" id="ELs-Zc-0Ya"/>
-                            <constraint firstItem="xIY-HR-TNj" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="90" id="GGs-CR-fOB"/>
+                            <constraint firstItem="lhe-qd-CXy" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="50" id="ELs-Zc-0Ya"/>
+                            <constraint firstItem="xIY-HR-TNj" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="80" id="GGs-CR-fOB"/>
                             <constraint firstItem="5AC-IO-QqW" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="50" id="JBh-t2-SYF"/>
                             <constraint firstItem="19H-1H-E1P" firstAttribute="top" secondItem="5AC-IO-QqW" secondAttribute="bottom" constant="20" id="JWs-KB-ua8"/>
                             <constraint firstItem="UKd-Ud-9hX" firstAttribute="top" secondItem="oV5-vl-RLT" secondAttribute="bottom" constant="75" id="L0U-r0-FOf"/>
@@ -811,14 +812,22 @@
                             <constraint firstItem="5AC-IO-QqW" firstAttribute="top" secondItem="kUs-0d-816" secondAttribute="bottom" constant="20" id="p3l-Y3-doV"/>
                             <constraint firstItem="lbD-oW-ijO" firstAttribute="top" secondItem="BZ8-0b-Jmj" secondAttribute="top" constant="50" id="qor-2G-zXp"/>
                             <constraint firstItem="s6x-OH-QyX" firstAttribute="top" secondItem="lbD-oW-ijO" secondAttribute="bottom" constant="20" id="sA0-oM-KnD"/>
-                            <constraint firstItem="oV5-vl-RLT" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="90" id="uWZ-PZ-6MC"/>
+                            <constraint firstItem="oV5-vl-RLT" firstAttribute="leading" secondItem="BZ8-0b-Jmj" secondAttribute="leading" constant="80" id="uWZ-PZ-6MC"/>
                             <constraint firstItem="s6x-OH-QyX" firstAttribute="leading" secondItem="kUs-0d-816" secondAttribute="trailing" constant="40" id="vhq-E0-BV2"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Settings" id="210-AO-bw5"/>
+                    <navigationItem key="navigationItem" title="Settings" id="210-AO-bw5">
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="9kh-de-hrt">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButton:" destination="c5U-Ex-b7v" id="A0i-ys-35U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="dateLabel" destination="BW3-hh-GOO" id="8Cf-Ok-JuC"/>
                         <outlet property="goTextField" destination="19H-1H-E1P" id="Zr6-Dd-clY"/>
                         <outlet property="numberServedGo" destination="lIb-AD-cZM" id="qRH-C3-eTI"/>
                         <outlet property="numberServedStay" destination="HAj-Nm-wwe" id="U8n-2y-dVA"/>
