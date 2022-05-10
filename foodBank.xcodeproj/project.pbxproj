@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F3EB78004269AAFFF84DBBB /* Pods_foodBank_foodBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4994859D89F4A537B2230F1 /* Pods_foodBank_foodBankUITests.framework */; };
+		345AE0C8282A0F3E00251D7F /* AdminFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345AE0C7282A0F3E00251D7F /* AdminFeedViewController.swift */; };
+		345AE0CA282A120800251D7F /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345AE0C9282A120800251D7F /* MealCell.swift */; };
 		348C58EB27F7D08C00A58181 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C58EA27F7D08C00A58181 /* LoginViewController.swift */; };
 		348C58ED27F7D0B000A58181 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C58EC27F7D0B000A58181 /* MenuViewController.swift */; };
 		3492CCF0281DD28A00B33DAA /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3492CCEF281DD28A00B33DAA /* MemberViewController.swift */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		0165D46CA9C0432EE8066582 /* Pods-foodBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBankTests.debug.xcconfig"; path = "Target Support Files/Pods-foodBankTests/Pods-foodBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		345AE0C7282A0F3E00251D7F /* AdminFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminFeedViewController.swift; sourceTree = "<group>"; };
+		345AE0C9282A120800251D7F /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		348C58EA27F7D08C00A58181 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		348C58EC27F7D0B000A58181 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3492CCEF281DD28A00B33DAA /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				34AF4C4827F7C922008D7BD4 /* AppDelegate.swift */,
 				34AF4C4A27F7C922008D7BD4 /* SceneDelegate.swift */,
 				34AF4C4E27F7C922008D7BD4 /* Main.storyboard */,
+				345AE0C9282A120800251D7F /* MealCell.swift */,
+				345AE0C7282A0F3E00251D7F /* AdminFeedViewController.swift */,
 				34EEE65728221BD000A2679B /* AdminViewController.swift */,
 				3492CCEF281DD28A00B33DAA /* MemberViewController.swift */,
 				349EF721280A5CC90054347F /* GuestViewController.swift */,
@@ -421,9 +427,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345AE0CA282A120800251D7F /* MealCell.swift in Sources */,
 				348C58EB27F7D08C00A58181 /* LoginViewController.swift in Sources */,
 				3492CCF0281DD28A00B33DAA /* MemberViewController.swift in Sources */,
 				349EF722280A5CC90054347F /* GuestViewController.swift in Sources */,
+				345AE0C8282A0F3E00251D7F /* AdminFeedViewController.swift in Sources */,
 				348C58ED27F7D0B000A58181 /* MenuViewController.swift in Sources */,
 				34EEE65828221BD000A2679B /* AdminViewController.swift in Sources */,
 				34AF4C5327F7C922008D7BD4 /* foodBank.xcdatamodeld in Sources */,
