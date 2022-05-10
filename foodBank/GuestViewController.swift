@@ -48,6 +48,8 @@ class GuestViewController: UIViewController {
     @IBOutlet weak var backButton: UIBarButtonItem!
     
     @IBOutlet weak var submitButton: UIButton!
+    
+    let user = PFUser.current()!
         
     @IBAction func onMinusButtonStay(_ sender: Any) {
         var count = Int(stayCountLabel.text!) ?? 0
@@ -61,7 +63,11 @@ class GuestViewController: UIViewController {
     
     @IBAction func onPlusButtonStay(_ sender: Any) {
         var count = Int(stayCountLabel.text!) ?? 0
-        count = count + 1
+        let stayMax = user.value(forKey: "stay")!
+        let stayMaxInt = Int(stayMax as! String)!
+        if count < stayMaxInt {
+            count = count + 1
+        }
         let string = String(count)
         stayCountLabel.text = string
     }
@@ -77,7 +83,11 @@ class GuestViewController: UIViewController {
     
     @IBAction func onPlusButtonGo(_ sender: Any) {
         var count = Int(goCountLabel.text!) ?? 0
-        count = count + 1
+        let goMax = user.value(forKey: "go")!
+        let goMaxInt = Int(goMax as! String)!
+        if count < goMaxInt {
+            count = count + 1
+        }
         let string = String(count)
         goCountLabel.text = string
     }
@@ -86,12 +96,10 @@ class GuestViewController: UIViewController {
         dismiss(animated: true)
     }
     
-    let defaults = UserDefaults.standard
-    
     @IBAction func onSubmit(_ sender: Any) {
-        let name = defaults.string(forKey: "username")
-        let meal = PFObject(className: "\(name!)Meals")
-        meal["user"] = "guest"
+        let meal = PFObject(className: "Meal")
+        meal["user"] = user
+        meal["identifier"] = "Guest"
         meal["toStayMeals"] = stayCountLabel.text!
         meal["toGoMeals"] = goCountLabel.text!
         

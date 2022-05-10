@@ -66,10 +66,12 @@ class LoginViewController: UIViewController {
         let user = PFUser()
         user.username = usernameTextField.text!
         user.password = passwordTextField.text!
+        user.setValue("3", forKey: "stay")
+        user.setValue("3", forKey: "go")
         user.signUpInBackground { success, Error in
             if success{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
-                self.defaults.set(username, forKey: "username")
+                self.defaults.set(self.usernameTextField.text!, forKey: "username")
             } else {
                 print("Error: \(String(describing: Error))")
             }
