@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2F3EB78004269AAFFF84DBBB /* Pods_foodBank_foodBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4994859D89F4A537B2230F1 /* Pods_foodBank_foodBankUITests.framework */; };
-		345AE0C8282A0F3E00251D7F /* AdminFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345AE0C7282A0F3E00251D7F /* AdminFeedViewController.swift */; };
-		345AE0CA282A120800251D7F /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345AE0C9282A120800251D7F /* MealCell.swift */; };
 		348C58EB27F7D08C00A58181 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C58EA27F7D08C00A58181 /* LoginViewController.swift */; };
 		348C58ED27F7D0B000A58181 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C58EC27F7D0B000A58181 /* MenuViewController.swift */; };
 		3492CCF0281DD28A00B33DAA /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3492CCEF281DD28A00B33DAA /* MemberViewController.swift */; };
@@ -23,8 +21,10 @@
 		34AF4C6327F7C927008D7BD4 /* foodBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6227F7C927008D7BD4 /* foodBankTests.swift */; };
 		34AF4C6D27F7C927008D7BD4 /* foodBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6C27F7C927008D7BD4 /* foodBankUITests.swift */; };
 		34AF4C6F27F7C927008D7BD4 /* foodBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF4C6E27F7C927008D7BD4 /* foodBankUITestsLaunchTests.swift */; };
-		34EEE65828221BD000A2679B /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EEE65728221BD000A2679B /* AdminViewController.swift */; };
+		34EEE65828221BD000A2679B /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EEE65728221BD000A2679B /* AdminHomeViewController.swift */; };
 		A723CD0FE86D7EAA4A137BED /* Pods_foodBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DD8C4640DA41923D732489 /* Pods_foodBankTests.framework */; };
+		F413845F283DE7D600663A7D /* AdminMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413845E283DE7D600663A7D /* AdminMealTableViewController.swift */; };
+		F4138463283F119100663A7D /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4138462283F119100663A7D /* MealCell.swift */; };
 		F940E07A3163E10573B21E23 /* Pods_foodBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF52D431677D758F9D2A4132 /* Pods_foodBank.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +47,6 @@
 
 /* Begin PBXFileReference section */
 		0165D46CA9C0432EE8066582 /* Pods-foodBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBankTests.debug.xcconfig"; path = "Target Support Files/Pods-foodBankTests/Pods-foodBankTests.debug.xcconfig"; sourceTree = "<group>"; };
-		345AE0C7282A0F3E00251D7F /* AdminFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminFeedViewController.swift; sourceTree = "<group>"; };
-		345AE0C9282A120800251D7F /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		348C58EA27F7D08C00A58181 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		348C58EC27F7D0B000A58181 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3492CCEF281DD28A00B33DAA /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +64,7 @@
 		34AF4C6827F7C927008D7BD4 /* foodBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AF4C6C27F7C927008D7BD4 /* foodBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodBankUITests.swift; sourceTree = "<group>"; };
 		34AF4C6E27F7C927008D7BD4 /* foodBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		34EEE65728221BD000A2679B /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		34EEE65728221BD000A2679B /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
 		465E0952B428E87277BFDE0B /* Pods-foodBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBankTests.release.xcconfig"; path = "Target Support Files/Pods-foodBankTests/Pods-foodBankTests.release.xcconfig"; sourceTree = "<group>"; };
 		51C13BDE40C2BC21CBF2F4C3 /* Pods-foodBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBank.debug.xcconfig"; path = "Target Support Files/Pods-foodBank/Pods-foodBank.debug.xcconfig"; sourceTree = "<group>"; };
 		83D80173187B6236B20AB95A /* Pods-foodBank-foodBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBank-foodBankUITests.release.xcconfig"; path = "Target Support Files/Pods-foodBank-foodBankUITests/Pods-foodBank-foodBankUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +73,8 @@
 		A4994859D89F4A537B2230F1 /* Pods_foodBank_foodBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodBank_foodBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF52D431677D758F9D2A4132 /* Pods_foodBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2661E1D5BE78BCB1B1B9CE /* Pods-foodBank-foodBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodBank-foodBankUITests.debug.xcconfig"; path = "Target Support Files/Pods-foodBank-foodBankUITests/Pods-foodBank-foodBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F413845E283DE7D600663A7D /* AdminMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMealTableViewController.swift; sourceTree = "<group>"; };
+		F4138462283F119100663A7D /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,18 +130,15 @@
 		34AF4C4727F7C922008D7BD4 /* foodBank */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC4AE9283973AD0047D895 /* LoginVC */,
+				F4DC4AEA2839743A0047D895 /* MenuVC */,
+				F4DC4AE8283973AA0047D895 /* Admin */,
+				F4DC4AEC283974BF0047D895 /* GuestVC */,
+				F4DC4AEB283974A00047D895 /* MemberVC */,
+				F4DC4AE7283972FD0047D895 /* Storyboards */,
 				34AF4C4827F7C922008D7BD4 /* AppDelegate.swift */,
 				34AF4C4A27F7C922008D7BD4 /* SceneDelegate.swift */,
-				34AF4C4E27F7C922008D7BD4 /* Main.storyboard */,
-				345AE0C9282A120800251D7F /* MealCell.swift */,
-				345AE0C7282A0F3E00251D7F /* AdminFeedViewController.swift */,
-				34EEE65728221BD000A2679B /* AdminViewController.swift */,
-				3492CCEF281DD28A00B33DAA /* MemberViewController.swift */,
-				349EF721280A5CC90054347F /* GuestViewController.swift */,
-				348C58EA27F7D08C00A58181 /* LoginViewController.swift */,
-				348C58EC27F7D0B000A58181 /* MenuViewController.swift */,
 				34AF4C5427F7C927008D7BD4 /* Assets.xcassets */,
-				34AF4C5627F7C927008D7BD4 /* LaunchScreen.storyboard */,
 				34AF4C5927F7C927008D7BD4 /* Info.plist */,
 				34AF4C5127F7C922008D7BD4 /* foodBank.xcdatamodeld */,
 			);
@@ -186,6 +183,57 @@
 				465E0952B428E87277BFDE0B /* Pods-foodBankTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4DC4AE7283972FD0047D895 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				34AF4C5627F7C927008D7BD4 /* LaunchScreen.storyboard */,
+				34AF4C4E27F7C922008D7BD4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F4DC4AE8283973AA0047D895 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				34EEE65728221BD000A2679B /* AdminHomeViewController.swift */,
+				F413845E283DE7D600663A7D /* AdminMealTableViewController.swift */,
+				F4138462283F119100663A7D /* MealCell.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		F4DC4AE9283973AD0047D895 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				348C58EA27F7D08C00A58181 /* LoginViewController.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		F4DC4AEA2839743A0047D895 /* MenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				348C58EC27F7D0B000A58181 /* MenuViewController.swift */,
+			);
+			path = MenuVC;
+			sourceTree = "<group>";
+		};
+		F4DC4AEB283974A00047D895 /* MemberVC */ = {
+			isa = PBXGroup;
+			children = (
+				3492CCEF281DD28A00B33DAA /* MemberViewController.swift */,
+			);
+			path = MemberVC;
+			sourceTree = "<group>";
+		};
+		F4DC4AEC283974BF0047D895 /* GuestVC */ = {
+			isa = PBXGroup;
+			children = (
+				349EF721280A5CC90054347F /* GuestViewController.swift */,
+			);
+			path = GuestVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,13 +475,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				345AE0CA282A120800251D7F /* MealCell.swift in Sources */,
 				348C58EB27F7D08C00A58181 /* LoginViewController.swift in Sources */,
 				3492CCF0281DD28A00B33DAA /* MemberViewController.swift in Sources */,
 				349EF722280A5CC90054347F /* GuestViewController.swift in Sources */,
-				345AE0C8282A0F3E00251D7F /* AdminFeedViewController.swift in Sources */,
+				F413845F283DE7D600663A7D /* AdminMealTableViewController.swift in Sources */,
+				F4138463283F119100663A7D /* MealCell.swift in Sources */,
 				348C58ED27F7D0B000A58181 /* MenuViewController.swift in Sources */,
-				34EEE65828221BD000A2679B /* AdminViewController.swift in Sources */,
+				34EEE65828221BD000A2679B /* AdminHomeViewController.swift in Sources */,
 				34AF4C5327F7C922008D7BD4 /* foodBank.xcdatamodeld in Sources */,
 				34AF4C4927F7C922008D7BD4 /* AppDelegate.swift in Sources */,
 				34AF4C4B27F7C922008D7BD4 /* SceneDelegate.swift in Sources */,

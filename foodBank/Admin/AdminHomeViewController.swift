@@ -21,6 +21,14 @@ class AdminViewController: UIViewController {
     @IBOutlet weak var setStayButton: UIButton!
     @IBOutlet weak var setGoButton: UIButton!
     
+    @IBOutlet weak var showAllMeals: UIButton!
+    
+    
+    @IBAction func showMeals(_ sender: Any) {
+        performSegue(withIdentifier: "showMealsSegue", sender: Any?.self)
+    }
+    
+    
     let user = PFUser.current()!
     
     var servedStay = 0
@@ -94,6 +102,8 @@ class AdminViewController: UIViewController {
             }
         }
     }
+    
+   
 
     /*
     // MARK: - Navigation
