@@ -23,7 +23,8 @@ class AdminTableViewController: UITableViewController {
         super.viewDidLoad()
     //    loadNotes()
         
-        tableView.rowHeight = 180.0
+        tableView.estimatedRowHeight = 50.0  //Give an approximation here
+        tableView.rowHeight = UITableView.automaticDimension
         
         
         myRefreshControl.addTarget(self, action: #selector(getter: meals), for: .valueChanged)
@@ -59,7 +60,6 @@ class AdminTableViewController: UITableViewController {
             }
         }
     }
-    
 
 //
 //        numberOfNotes = 20
@@ -156,6 +156,10 @@ class AdminTableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
+        return UITableView.automaticDimension
+     }
     
 
 }

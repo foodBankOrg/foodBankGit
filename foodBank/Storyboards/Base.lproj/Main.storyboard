@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lQu-JO-3GX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lQu-JO-3GX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -608,6 +608,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="etl-Au-r0l" firstAttribute="leading" secondItem="c1S-27-jrT" secondAttribute="trailing" constant="10" id="OCz-nN-Hxh"/>
+                                    <constraint firstAttribute="trailing" secondItem="etl-Au-r0l" secondAttribute="trailing" id="ghG-0i-vVo"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your foodbank meal-tracking system! Create or sign-in to your foodbank location here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPT-cK-D48">
                                 <rect key="frame" x="20" y="784" width="374" height="61"/>
@@ -891,52 +895,45 @@
         <!--Admin Table View Controller-->
         <scene sceneID="UKi-eZ-Tbf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KK6-bA-9Uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="H7w-xT-PEU" customClass="AdminTableViewController" customModule="foodBank" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="c1I-Lk-1pm" userLabel="AdminTableView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell autoresizesSubviews="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="120" id="G1F-VI-zu9" userLabel="AdminTableViewCell" customClass="MealCell" customModule="foodBank" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
+                            <tableViewCell autoresizesSubviews="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" id="G1F-VI-zu9" userLabel="AdminTableViewCell" customClass="MealCell" customModule="foodBank" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="71.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G1F-VI-zu9" id="auW-Y4-Bev">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Guest" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDc-08-6OA" userLabel="Guest ">
-                                            <rect key="frame" x="20" y="11" width="394" height="26"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="26" id="JAQ-iE-qGp"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" text="Guest" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDc-08-6OA" userLabel="Guest ">
+                                            <rect key="frame" x="10" y="5" width="394" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Guest Notes" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJS-bj-6wL" userLabel="Guest_Notes">
-                                            <rect key="frame" x="20" y="42" width="394" height="73"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="26" id="fym-8B-w9u"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" text="Guest Notes" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJS-bj-6wL" userLabel="Guest_Notes">
+                                            <rect key="frame" x="10" y="35.5" width="394" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="eDc-08-6OA" firstAttribute="top" secondItem="auW-Y4-Bev" secondAttribute="topMargin" id="0MY-wI-bnu"/>
-                                        <constraint firstItem="eDc-08-6OA" firstAttribute="leading" secondItem="auW-Y4-Bev" secondAttribute="leadingMargin" id="28J-NK-w6h"/>
-                                        <constraint firstAttribute="trailing" secondItem="eDc-08-6OA" secondAttribute="trailing" id="HuD-y3-42Y"/>
-                                        <constraint firstAttribute="trailing" secondItem="vJS-bj-6wL" secondAttribute="trailing" id="QS7-ue-EkD"/>
-                                        <constraint firstItem="vJS-bj-6wL" firstAttribute="leading" secondItem="auW-Y4-Bev" secondAttribute="leadingMargin" id="dlQ-LY-0Oh"/>
-                                        <constraint firstItem="vJS-bj-6wL" firstAttribute="top" secondItem="eDc-08-6OA" secondAttribute="bottom" constant="5" id="j8K-i3-Cta"/>
-                                        <constraint firstAttribute="bottom" secondItem="vJS-bj-6wL" secondAttribute="bottom" constant="5" id="yyo-uM-XhG"/>
+                                        <constraint firstAttribute="trailing" secondItem="eDc-08-6OA" secondAttribute="trailing" constant="10" id="1fY-2p-VJd"/>
+                                        <constraint firstItem="vJS-bj-6wL" firstAttribute="leading" secondItem="auW-Y4-Bev" secondAttribute="leading" constant="10" id="DZc-1d-Vyp"/>
+                                        <constraint firstItem="vJS-bj-6wL" firstAttribute="top" secondItem="eDc-08-6OA" secondAttribute="bottom" constant="10" id="EAd-Dl-9Tl"/>
+                                        <constraint firstItem="eDc-08-6OA" firstAttribute="leading" secondItem="auW-Y4-Bev" secondAttribute="leading" constant="10" id="Eef-D2-uBn"/>
+                                        <constraint firstAttribute="bottom" secondItem="vJS-bj-6wL" secondAttribute="bottom" constant="10" id="Ype-8I-IZc"/>
+                                        <constraint firstItem="eDc-08-6OA" firstAttribute="top" secondItem="auW-Y4-Bev" secondAttribute="top" constant="10" id="rw1-z2-7so"/>
+                                        <constraint firstAttribute="trailing" secondItem="vJS-bj-6wL" secondAttribute="trailing" constant="10" id="xjn-yP-0oJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="guestName" destination="eDc-08-6OA" id="xDR-8y-KdQ"/>
-                                    <outlet property="guestNotes" destination="vJS-bj-6wL" id="Pl5-x0-uyx"/>
+                                    <outlet property="guestName" destination="eDc-08-6OA" id="tcT-T1-gi5"/>
+                                    <outlet property="guestNotes" destination="vJS-bj-6wL" id="bQR-Au-PpT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -950,6 +947,7 @@
                         <outlet property="adminTableView" destination="c1I-Lk-1pm" id="dmr-se-B1e"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KK6-bA-9Uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4979.7101449275369" y="-135.26785714285714"/>
         </scene>
