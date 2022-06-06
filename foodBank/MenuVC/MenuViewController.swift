@@ -26,7 +26,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         let user = PFUser.current()!
         defaults.set(user.username, forKey: "username")
-        currentUserLabel.text = "Welcome to \(user.username!)!"
+        currentUserLabel.text = user.username!
         
         super.viewDidLoad()
         guestLoginButton.layer.cornerRadius = 12
