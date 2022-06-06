@@ -82,7 +82,11 @@ class AdminTableViewController: UITableViewController {
 //    }
 
     // MARK: - Table view data source
-
+    
+    @IBAction func onBack(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
