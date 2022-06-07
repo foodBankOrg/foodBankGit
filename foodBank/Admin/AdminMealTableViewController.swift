@@ -10,22 +10,19 @@ import Parse
 
 class AdminTableViewController: UITableViewController {
     
+    let myRefreshControl = UIRefreshControl()
+    
     let user = PFUser.current()
     @objc var meals = [PFObject]()
     var numberOfNotes: Int!
-    
-    let myRefreshControl = UIRefreshControl()
-    
     
     @IBOutlet var adminTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    //    loadNotes()
         
         tableView.estimatedRowHeight = 50.0  //Give an approximation here
         tableView.rowHeight = UITableView.automaticDimension
-        
         
         myRefreshControl.addTarget(self, action: #selector(getter: meals), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
@@ -35,8 +32,8 @@ class AdminTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-//      myRefreshControl.addTarget(self, action: #selector(loadNotes), for: .valueChanged)
- //     tableView.refreshControl = myRefreshControl
+        // myRefreshControl.addTarget(self, action: #selector(loadNotes), for: .valueChanged)
+        // tableView.refreshControl = myRefreshControl
         tableView.delegate = self
         tableView.dataSource = self
         tableView.refreshControl = myRefreshControl
@@ -60,28 +57,6 @@ class AdminTableViewController: UITableViewController {
             }
         }
     }
-
-//
-//        numberOfNotes = 20
-//
-//       // print(guestNotesArray)
-//
-//        self.tableView.reloadData()
-//        self.myRefreshControl.endRefreshing()
-//
-//    }
-    
-//    func loadMoreNotes(){
-//        numberOfNotes = numberOfNotes + 20
-//    }
-//
-//    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        if indexPath.row + 1 == guestNotesArray.count {
-//            loadMoreNotes()
-//        }
-//    }
-
-    // MARK: - Table view data source
     
     @IBAction func onBack(_ sender: Any) {
         dismiss(animated: true)
@@ -114,7 +89,11 @@ class AdminTableViewController: UITableViewController {
         
         cell.guestNotes.text = "Notes: " + notes
         
+        let servedStay = meal["toStayMeals"] as! String
+        let servedGo = meal["toGoMeals"] as! String
         
+        cell.servedStay.text = "Meals Served to Stay: " + servedStay
+        cell.servedGo.text = "Meals Served to Go: " + servedGo
         
         return cell
         

@@ -17,6 +17,7 @@ class AdminViewController: UIViewController {
     @IBOutlet weak var numberServedStay: UILabel!
     @IBOutlet weak var numberServedGo: UILabel!
     @IBOutlet weak var numberServedTotal: UILabel!
+    @IBOutlet weak var peopleServed: UILabel!
     
     @IBOutlet weak var setStayButton: UIButton!
     @IBOutlet weak var setGoButton: UIButton!
@@ -73,6 +74,7 @@ class AdminViewController: UIViewController {
         numberServedTotal.text! = String(servedTotal)
         numberServedStay.text! = String(servedStay)
         numberServedGo.text! = String(servedGo)
+        peopleServed.text! = String(i)
     }
     
     @IBAction func backButton(_ sender: Any) {

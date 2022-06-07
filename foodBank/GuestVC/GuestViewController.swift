@@ -13,21 +13,21 @@ class GuestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        minusButtonStay.layer.cornerRadius = 12
-        minusButtonStay.layer.borderWidth = 1
-        minusButtonStay.layer.borderColor = UIColor.black.cgColor
-        
-        minusButtonGo.layer.cornerRadius = 12
-        minusButtonGo.layer.borderWidth = 1
-        minusButtonGo.layer.borderColor = UIColor.black.cgColor
-        
-        plusButtonStay.layer.cornerRadius = 12
-        plusButtonStay.layer.borderWidth = 1
-        plusButtonStay.layer.borderColor = UIColor.black.cgColor
-        
-        plusButtonGo.layer.cornerRadius = 12
-        plusButtonGo.layer.borderWidth = 1
-        plusButtonGo.layer.borderColor = UIColor.black.cgColor
+//        minusButtonStay.layer.cornerRadius = 12
+//        minusButtonStay.layer.borderWidth = 1
+//        minusButtonStay.layer.borderColor = UIColor.black.cgColor
+//        
+//        minusButtonGo.layer.cornerRadius = 12
+//        minusButtonGo.layer.borderWidth = 1
+//        minusButtonGo.layer.borderColor = UIColor.black.cgColor
+//        
+//        plusButtonStay.layer.cornerRadius = 12
+//        plusButtonStay.layer.borderWidth = 1
+//        plusButtonStay.layer.borderColor = UIColor.black.cgColor
+//        
+//        plusButtonGo.layer.cornerRadius = 12
+//        plusButtonGo.layer.borderWidth = 1
+//        plusButtonGo.layer.borderColor = UIColor.black.cgColor
         
         submitButton.layer.cornerRadius = 12
         submitButton.layer.borderWidth = 1

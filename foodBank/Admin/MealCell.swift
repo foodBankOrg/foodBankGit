@@ -11,7 +11,8 @@ class MealCell: UITableViewCell {
     
     @IBOutlet weak var guestName: UILabel!
     @IBOutlet weak var guestNotes: UILabel!
-    
+    @IBOutlet weak var servedStay: UILabel!
+    @IBOutlet weak var servedGo: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
