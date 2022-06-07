@@ -558,7 +558,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your foodbank meal-tracking system! Create or sign-in to your foodbank location here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPT-cK-D48">
-                                <rect key="frame" x="20" y="784" width="374" height="61"/>
+                                <rect key="frame" x="20" y="781" width="374" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -606,8 +606,8 @@
                                     <action selector="onAdminPortal:" destination="lQu-JO-3GX" eventType="touchUpInside" id="cHv-o1-PvX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Qea-Bw-cIJ">
-                                <rect key="frame" x="50" y="552" width="260" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Qea-Bw-cIJ">
+                                <rect key="frame" x="50" y="546" width="314" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -622,7 +622,6 @@
                         <viewLayoutGuide key="safeArea" id="t5m-ez-Yhx"/>
                         <color key="backgroundColor" red="0.091671399769999995" green="0.64237111810000003" blue="0.51400893930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="yPT-cK-D48" secondAttribute="trailing" constant="20" id="1TX-UO-xVJ"/>
                             <constraint firstItem="uVK-tG-bFb" firstAttribute="top" secondItem="jDF-eo-3C7" secondAttribute="bottom" constant="10" id="4Y4-Br-kBJ"/>
                             <constraint firstItem="uVK-tG-bFb" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="5Xm-l3-43S"/>
                             <constraint firstAttribute="trailing" secondItem="w5b-xi-nbR" secondAttribute="trailing" constant="50" id="7F4-k4-ZTq"/>
@@ -632,18 +631,18 @@
                             <constraint firstItem="etl-Au-r0l" firstAttribute="leading" secondItem="c1S-27-jrT" secondAttribute="trailing" constant="5" id="Jrv-G0-xzH"/>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="jDF-eo-3C7" secondAttribute="trailing" constant="50" id="L9z-7e-2tM"/>
                             <constraint firstItem="c1S-27-jrT" firstAttribute="top" secondItem="uVK-tG-bFb" secondAttribute="bottom" constant="10" id="MNi-bv-6vj"/>
-                            <constraint firstItem="yPT-cK-D48" firstAttribute="firstBaseline" secondItem="Qea-Bw-cIJ" secondAttribute="baseline" constant="24.5" symbolType="layoutAnchor" id="NED-Dx-amf"/>
                             <constraint firstItem="c1S-27-jrT" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="RoH-pg-M5E"/>
-                            <constraint firstItem="yPT-cK-D48" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="20" id="WME-Kw-JPr"/>
-                            <constraint firstItem="t5m-ez-Yhx" firstAttribute="bottom" secondItem="yPT-cK-D48" secondAttribute="bottom" constant="17" id="YmM-6f-hCI"/>
+                            <constraint firstItem="Qea-Bw-cIJ" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="TQx-j4-yUb"/>
+                            <constraint firstItem="t5m-ez-Yhx" firstAttribute="bottom" secondItem="yPT-cK-D48" secondAttribute="bottom" constant="20" id="YmM-6f-hCI"/>
                             <constraint firstItem="jDF-eo-3C7" firstAttribute="top" secondItem="w5b-xi-nbR" secondAttribute="bottom" constant="20" id="agV-oO-KZJ"/>
                             <constraint firstItem="yPT-cK-D48" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="20" id="ciC-o6-Byo"/>
-                            <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="Qea-Bw-cIJ" secondAttribute="trailing" constant="35" id="fJo-eg-Ya5"/>
                             <constraint firstItem="jDF-eo-3C7" firstAttribute="leading" secondItem="t5m-ez-Yhx" secondAttribute="leading" constant="50" id="h6g-Jp-2gn"/>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="jDF-eo-3C7" secondAttribute="trailing" constant="50" id="kMV-ri-GcR"/>
                             <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="yPT-cK-D48" secondAttribute="trailing" constant="20" id="lyb-53-YlY"/>
                             <constraint firstItem="etl-Au-r0l" firstAttribute="top" secondItem="uVK-tG-bFb" secondAttribute="bottom" constant="10" id="nUw-Mi-aSt"/>
+                            <constraint firstItem="Qea-Bw-cIJ" firstAttribute="top" secondItem="c1S-27-jrT" secondAttribute="bottom" constant="10" id="uBy-fc-RVE"/>
                             <constraint firstItem="w5b-xi-nbR" firstAttribute="top" secondItem="t5m-ez-Yhx" secondAttribute="top" id="wn4-Us-2uz"/>
+                            <constraint firstItem="t5m-ez-Yhx" firstAttribute="trailing" secondItem="Qea-Bw-cIJ" secondAttribute="trailing" constant="50" id="xO4-DF-AR2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sXd-ah-6wI"/>
