@@ -21,6 +21,13 @@ class LoginViewController: UIViewController {
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+       //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+       //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+        
         super.viewDidLoad()
         signInButton.layer.cornerRadius = 12
         signInButton.layer.borderWidth = 1
@@ -35,6 +42,11 @@ class LoginViewController: UIViewController {
         adminLoginButton.layer.borderColor = UIColor.black.cgColor
         
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBAction func onSignIn(_ sender: Any) {
