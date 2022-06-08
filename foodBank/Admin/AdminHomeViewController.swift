@@ -39,6 +39,14 @@ class AdminViewController: UIViewController {
     var meals = [PFObject]()
     
     override func viewDidLoad() {
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+       //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+       //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+        
         let now = NSDate()
         let cal = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)
         let midnightOfToday = cal!.startOfDay(for: now as Date)
@@ -58,6 +66,11 @@ class AdminViewController: UIViewController {
                 print(error.debugDescription)
             }
         }
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
